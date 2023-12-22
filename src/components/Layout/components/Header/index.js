@@ -28,6 +28,7 @@ import HeadlessTippy from '@tippyjs/react/headless';
 import 'tippy.js/dist/tippy.css';
 import AccountItem from '~/components/AccountItem';
 import Menu from '~/components/Propper/Menu';
+import Image from '~/components/Image';
 
 const cx = classNames.bind(styles);
 
@@ -164,7 +165,7 @@ function Header() {
                     )}
                     <Menu items={currentUser ? userMenu : MENU_ITEMS} onChange={handleMenuChange}>
                         {currentUser ? (
-                            <img
+                            <Image
                                 src="https://phantom-marca.unidadeditorial.es/b447de9ce5eac154255f1db2a9a35f32/resize/828/f/jpg/assets/multimedia/imagenes/2023/12/08/17020626701055.jpg"
                                 className={cx('user-avatar')}
                                 alt="leomessi"
