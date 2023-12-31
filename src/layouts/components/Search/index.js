@@ -8,7 +8,7 @@ import AccountItem from '~/components/AccountItem';
 import styles from './Search.module.scss';
 import classNames from 'classnames/bind';
 import { useDebounce } from '~/hooks';
-import * as searchService from '~/apiServices/searchServices';
+import * as searchService from '~/services/searchService';
 
 const cx = classNames.bind(styles);
 
